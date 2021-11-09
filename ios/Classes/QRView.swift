@@ -35,7 +35,7 @@ public class QRView:NSObject,FlutterPlatformView {
                 NSLog("Unable to start scanning")
             }
         } else {
-                UIAlertView(title: "扫描错误", message: "此应用没有访问相机的权限", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "确定").show()
+                UIAlertView(title: "扫描错误", message: "此应用没有访问相机的权限,请打开设置->MES->并开启相机权限", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "确定").show()
 
             //             UIAlertView(title: "Scanning Unavailable", message: "This app does not have permission to access the camera", delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "Ok").show()
         }
